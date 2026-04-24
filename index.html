@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>3サイト統合ダッシュボード</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Hiragino Sans,sans-serif; background:#f1f5f9; margin:0; padding:24px; color:#1e293b; }
+header { max-width:1400px; margin:0 auto 24px; }
+h1 { font-size:28px; margin:0 0 6px; }
+.sub { color:#64748b; font-size:14px; }
+.totals { display:flex; gap:16px; margin-top:16px; }
+.total { flex:1; background:#fff; padding:16px 20px; border-radius:12px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.total-num { font-size:32px; font-weight:800; color:#0f172a; }
+.total-label { font-size:13px; color:#64748b; margin-top:4px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(400px,1fr)); gap:20px; max-width:1400px; margin:0 auto; }
+.card { background:#fff; border-radius:12px; padding:20px 24px; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+.card-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px; }
+h2 { margin:0; font-size:20px; }
+.site-url { font-size:13px; color:#64748b; text-decoration:none; }
+.site-url:hover { color:#3b82f6; }
+.kpis { display:flex; gap:12px; margin:16px 0 20px; }
+.kpi { flex:1; background:#f8fafc; border-radius:8px; padding:12px; text-align:center; }
+.kpi-num { font-size:26px; font-weight:800; color:#0f172a; }
+.kpi-label { font-size:12px; color:#64748b; margin-top:2px; }
+h3 { font-size:14px; color:#475569; margin:16px 0 8px; padding-bottom:4px; border-bottom:1px solid #e2e8f0; }
+.list { list-style:none; padding:0; margin:0; font-size:13px; }
+.list li { padding:6px 0; border-bottom:1px dashed #e2e8f0; line-height:1.5; }
+.date { display:inline-block; background:#e0e7ff; color:#4338ca; padding:1px 8px; border-radius:4px; font-size:11px; font-weight:600; margin-right:8px; }
+.list a { color:#1e293b; text-decoration:none; }
+.list a:hover { color:#3b82f6; text-decoration:underline; }
+.status { margin-top:12px; font-size:11px; color:#94a3b8; text-align:right; }
+@media (max-width:768px) { .totals { flex-direction:column; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>📊 3サイト統合ダッシュボード</h1>
+  <div class="sub">最終更新: 2026-04-24 10:13</div>
+  <div class="totals">
+    <div class="total"><div class="total-num">86</div><div class="total-label">全体 公開済み記事</div></div>
+    <div class="total"><div class="total-num">45</div><div class="total-label">全体 予約投稿中</div></div>
+    <div class="total"><div class="total-num">10</div><div class="total-label">直近7日で公開</div></div>
+  </div>
+</header>
+<div class="grid">
+        <div class="card" style="border-top:6px solid #3b82f6;">
+          <div class="card-head">
+            <h2 style="color:#3b82f6;">AI英会話アプリ</h2>
+            <a href="https://biz-english-ai.com" target="_blank" class="site-url">biz-english-ai.com ↗</a>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><div class="kpi-num">34</div><div class="kpi-label">公開済み</div></div>
+            <div class="kpi"><div class="kpi-num">32</div><div class="kpi-label">予約中</div></div>
+            <div class="kpi"><div class="kpi-num">5</div><div class="kpi-label">直近7日公開</div></div>
+          </div>
+          <h3>📅 今後の予約投稿（直近7件）</h3>
+          <ul class="list upcoming"><li><span class="date">2026-04-25</span> <span class="title">スタディサプリENGLISH のデメリット・向かない人を正直に解説｜購入前に知っておくべきこと【20</span></li><li><span class="date">2026-04-26</span> <span class="title">Speak（スピーク）料金プラン完全解説｜月額・年額どっちがお得？【2026年版】</span></li><li><span class="date">2026-04-27</span> <span class="title">ELSA Speak の料金プランと支払い方法を完全解説｜最安で始める方法【2026年】</span></li><li><span class="date">2026-04-28</span> <span class="title">ネイティブキャンプ の解約・退会方法を完全解説｜無料期間中のやめ方も【2026年】</span></li><li><span class="date">2026-04-29</span> <span class="title">Speak 無料トライアルの始め方と解約方法｜登録5分で体験できる手順【2026年】</span></li><li><span class="date">2026-04-30</span> <span class="title">ELSA Speak の解約・返金方法を図解説明｜課金停止の手順とよくある落とし穴【2026年】</span></li><li><span class="date">2026-05-01</span> <span class="title">スタディサプリENGLISH vs ネイティブキャンプ｜AIと人間講師どちらで学ぶべきか比較【202</span></li></ul>
+          <h3>✅ 最近公開した記事（直近5件）</h3>
+          <ul class="list recent"><li><span class="date">2026-04-24</span> <a href="https://biz-english-ai.com/elsa-speak-free-vs-paid-plan-comparison/" target="_blank">ELSA Speak 無料版と有料版の違いを徹底比較｜どこまで使えるか正直レビュー【2026年】</a></li><li><span class="date">2026-04-23</span> <a href="https://biz-english-ai.com/speak-vs-elsa-speak-comparison/" target="_blank">Speak vs ELSA Speak 徹底比較｜AI英会話アプリどっちを選ぶべき？【2026年】</a></li><li><span class="date">2026-04-19</span> <a href="https://biz-english-ai.com/business-english-complete-guide/" target="_blank">ビジネス英語アプリ・オンライン英会話 完全ガイド｜目的・レベル・予算別で最適な1本が選べる【2026</a></li><li><span class="date">2026-04-17</span> <a href="https://biz-english-ai.com/studysapuri-english-free-trial-guide-2/" target="_blank">スタサプENGLISH 無料体験の正しいやり方｜期間・登録手順・注意点を全解説【2026年】</a></li><li><span class="date">2026-04-17</span> <a href="https://biz-english-ai.com/nativecamp-free-plan-limits/" target="_blank">ネイティブキャンプ 無料でどこまで使える？無料会員の制限と有料との違いを解説</a></li></ul>
+          <div class="status">OK</div>
+        </div>
+        
+        <div class="card" style="border-top:6px solid #10b981;">
+          <div class="card-head">
+            <h2 style="color:#10b981;">AI×業務効率化</h2>
+            <a href="https://ai-gyomu.jp" target="_blank" class="site-url">ai-gyomu.jp ↗</a>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><div class="kpi-num">33</div><div class="kpi-label">公開済み</div></div>
+            <div class="kpi"><div class="kpi-num">13</div><div class="kpi-label">予約中</div></div>
+            <div class="kpi"><div class="kpi-num">2</div><div class="kpi-label">直近7日公開</div></div>
+          </div>
+          <h3>📅 今後の予約投稿（直近7件）</h3>
+          <ul class="list upcoming"><li><span class="date">2026-04-25</span> <span class="title">tl;dvの評判・料金・機能レビュー【2026年】Nottaとの違いと使い分け</span></li><li><span class="date">2026-04-27</span> <span class="title">弥生会計オンライン 評判・料金レビュー【2026年】初年度無料の実態とSaaS連携の弱点</span></li><li><span class="date">2026-05-03</span> <span class="title">中小企業DXで最初に入れるべきSaaS3選【Power Automate担当者が解説】</span></li><li><span class="date">2026-05-07</span> <span class="title">個人事業主の確定申告 会計ソフト選び方ガイド【freee・MF・弥生を状況別に比較】</span></li><li><span class="date">2026-05-10</span> <span class="title">GMO電子印鑑Agree vs クラウドサイン 比較【2026年】現場目線の判断基準</span></li><li><span class="date">2026-05-14</span> <span class="title">Rimo Voice 評判・料金レビュー【2026年】専門用語特化型AI議事録の実力</span></li><li><span class="date">2026-05-18</span> <span class="title">電子契約を取引先に説得する方法【実際に使ったアプローチと失敗例】</span></li></ul>
+          <h3>✅ 最近公開した記事（直近5件）</h3>
+          <ul class="list recent"><li><span class="date">2026-04-22</span> <a href="https://ai-gyomu.jp/2026/04/22/denshikeiyaku-naze-hirogarnai/" target="_blank">電子契約が社内に定着しない3つの理由と対策【DX推進担当の経験から】</a></li><li><span class="date">2026-04-20</span> <a href="https://ai-gyomu.jp/2026/04/20/cloudsign-pricing-howto/" target="_blank">クラウドサイン 料金プランを徹底解説｜無料・有料の違いと使い方【2026年版】</a></li><li><span class="date">2026-04-16</span> <a href="https://ai-gyomu.jp/2026/04/16/denshikeiyaku-guide/" target="_blank">電子契約とは？仕組み・法的効力・導入メリットをわかりやすく解説【2026年版】</a></li><li><span class="date">2026-04-12</span> <a href="https://ai-gyomu.jp/2026/04/12/denshikeiyaku-compare/" target="_blank">電子契約サービス おすすめ5選【2026年】中小企業・個人事業主向けに料金・機能を徹底比較</a></li><li><span class="date">2026-04-08</span> <a href="https://ai-gyomu.jp/2026/04/08/cloudsign-review/" target="_blank">クラウドサインを使ってみた正直な感想【2026年】使いにくい？相手に受け入れてもらえる？</a></li></ul>
+          <div class="status">OK</div>
+        </div>
+        
+        <div class="card" style="border-top:6px solid #f59e0b;">
+          <div class="card-head">
+            <h2 style="color:#f59e0b;">副業×投資</h2>
+            <a href="https://side-invest.com" target="_blank" class="site-url">side-invest.com ↗</a>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><div class="kpi-num">19</div><div class="kpi-label">公開済み</div></div>
+            <div class="kpi"><div class="kpi-num">0</div><div class="kpi-label">予約中</div></div>
+            <div class="kpi"><div class="kpi-num">3</div><div class="kpi-label">直近7日公開</div></div>
+          </div>
+          <h3>📅 今後の予約投稿（直近7件）</h3>
+          <ul class="list upcoming"><li style="color:#94a3b8;">（なし）</li></ul>
+          <h3>✅ 最近公開した記事（直近5件）</h3>
+          <ul class="list recent"><li><span class="date">2026-04-20</span> <a href="https://side-invest.com/2026/04/20/self-intro/" target="_blank">副業で稼いだお金を全額投資に回す夫婦の自己紹介｜投資興味ゼロの妻と暮らしながら4,850万築いた記録</a></li><li><span class="date">2026-04-20</span> <a href="https://side-invest.com/2026/04/20/hello-world/" target="_blank">Hello world!</a></li><li><span class="date">2026-04-18</span> <a href="https://side-invest.com/2026/04/18/shoken-kaishain-hikaku/" target="_blank">会社員のネット証券 おすすめ比較【2026年・副業収入も運用したい人向け】</a></li><li><span class="date">2026-04-15</span> <a href="https://side-invest.com/2026/04/15/new-nisa-kaisha/" target="_blank">新NISA 会社員の埋め方 実録【2026年・妻の枠は未使用・私だけで360万埋める運用】</a></li><li><span class="date">2026-04-11</span> <a href="https://side-invest.com/2026/04/11/sbi-mitsui-sumitomo-card-nisa/" target="_blank">SBI証券×三井住友カード つみたてNISA ポイント還元の実録【2026年版】</a></li></ul>
+          <div class="status">OK</div>
+        </div>
+        </div>
+</body>
+</html>
