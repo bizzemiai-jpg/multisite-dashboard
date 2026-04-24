@@ -7,6 +7,8 @@ html_path = ROOT / "index.html"
 actions = json.loads((ROOT / "actions.json").read_text(encoding="utf-8"))
 gsc_path = ROOT / "gsc_data.json"
 gsc = json.loads(gsc_path.read_text(encoding="utf-8")) if gsc_path.is_file() else {"sites": {}}
+asp_path = ROOT / "asp_status.json"
+asp = json.loads(asp_path.read_text(encoding="utf-8")) if asp_path.is_file() else {"asps": {}}
 
 GSC_KEYS = {
     "biz-english-ai.com": "https://biz-english-ai.com/",
@@ -29,11 +31,22 @@ EXTRA_CSS = """
 .gsc .pos.mid { color:#ca8a04; }
 .gsc-empty { color:#94a3b8; padding:8px; font-size:12px; }
 .gsc-period { font-size:11px; color:#94a3b8; margin:4px 0 0; text-align:right; }
+.asp { font-size:12px; margin:0; padding:0; list-style:none; }
+.asp li { display:grid; grid-template-columns:60px 1fr 70px; gap:8px; padding:6px 8px; border-bottom:1px solid #e2e8f0; align-items:center; }
+.asp li:nth-child(odd) { background:#f8fafc; }
+.asp .badge { font-size:11px; font-weight:700; padding:2px 6px; border-radius:4px; text-align:center; }
+.asp .badge.approved { background:#dcfce7; color:#166534; }
+.asp .badge.pending  { background:#fef9c3; color:#854d0e; }
+.asp .badge.rejected { background:#fee2e2; color:#991b1b; }
+.asp .subj { color:#1e293b; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.asp .d { color:#64748b; font-size:11px; text-align:right; font-variant-numeric:tabular-nums; }
+.asp-name { font-weight:700; font-size:12px; color:#475569; margin:8px 0 2px; }
 """
 
 html = html_path.read_text(encoding="utf-8")
 html = re.sub(r'<h3>🎯 次にやるべきこと</h3><ul class="actions">.*?</ul>', '', html, flags=re.DOTALL)
 html = re.sub(r'<h3>🔍 検索順位 TOP5</h3>.*?(?=<div class="status">|<h3>|$)', '', html, flags=re.DOTALL)
+html = re.sub(r'<h3>🤝 アフィリ申請状況</h3>.*?(?=<div class="status">|<h3>|$)', '', html, flags=re.DOTALL)
 if ".actions {" not in html:
     html = html.replace("</style>", EXTRA_CSS + "</style>", 1)
 
@@ -65,9 +78,46 @@ def render_gsc(site_key):
     return (f'<h3>🔍 検索順位 TOP5</h3><ul class="gsc">{"".join(lis)}</ul>'
             f'<p class="gsc-period">{period} ・ クエリ / 表示回数 / 順位</p>')
 
+def fmt_date(s):
+    # "Sat, 18 Apr 2026 09:32:42" → "4/18"
+    import re as _re
+    m = _re.search(r"(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", s)
+    if not m: return s[:10]
+    months = {"Jan":1,"Feb":2,"Mar":3,"Apr":4,"May":5,"Jun":6,"Jul":7,"Aug":8,"Sep":9,"Oct":10,"Nov":11,"Dec":12}
+    return f"{months[m.group(2)]}/{int(m.group(1))}"
+
+def render_asp(site_key):
+    """サイトに紐づくASPごとの最新ステータスを表示"""
+    blocks = []
+    has_any = False
+    for asp_name, asp_info in asp.get("asps", {}).items():
+        if site_key not in asp_info.get("site_keys", []):
+            continue
+        items = asp_info.get("items", [])[:3]  # 各ASP最新3件
+        if not items:
+            continue
+        has_any = True
+        lis = []
+        for it in items:
+            st = it["status"]
+            badge_label = {"approved":"承認","pending":"審査中","rejected":"却下"}.get(st, st)
+            subj = it["subject"].replace("<","&lt;").replace(">","&gt;")
+            lis.append(
+                f'<li><span class="badge {st}">{badge_label}</span>'
+                f'<span class="subj" title="{subj}">{subj}</span>'
+                f'<span class="d">{fmt_date(it["date"])}</span></li>'
+            )
+        blocks.append(f'<div class="asp-name">{asp_name}</div><ul class="asp">{"".join(lis)}</ul>')
+    if not has_any:
+        return ('<h3>🤝 アフィリ申請状況</h3>'
+                '<div class="gsc-empty">該当メールなし（Gmail検索: ASPドメインから直近60日）</div>')
+    fetched = asp.get("fetched_at", "")[:16].replace("T", " ")
+    return (f'<h3>🤝 アフィリ申請状況</h3>{"".join(blocks)}'
+            f'<p class="gsc-period">Gmail取得: {fetched}</p>')
+
 for site in actions:
     pat = re.compile(r'(' + re.escape(site) + r' ↗</a>.*?)(<div class="status">)', re.DOTALL)
-    block = render_actions(actions[site]) + render_gsc(site)
+    block = render_actions(actions[site]) + render_gsc(site) + render_asp(site)
     html, n = pat.subn(lambda m, b=block: m.group(1) + b + m.group(2), html, count=1)
     print(f"{site}: injected={n}")
 

@@ -1,0 +1,99 @@
+{
+  "fetched_at": "2026-04-24T13:47:22",
+  "asps": {
+    "A8.net": {
+      "site_keys": [
+        "biz-english-ai.com",
+        "ai-gyomu.jp"
+      ],
+      "items": [
+        {
+          "subject": "[A8.net] メディア登録完了のお知らせ",
+          "from": "as-support@a8.net",
+          "date": "Sat, 18 Apr 2026 09:32:42",
+          "status": "approved",
+          "program": ""
+        }
+      ]
+    },
+    "もしもアフィリエイト": {
+      "site_keys": [
+        "biz-english-ai.com",
+        "ai-gyomu.jp"
+      ],
+      "items": [
+        {
+          "subject": "もしも会員 本登録完了のご案内【もしも】",
+          "from": "a-support@info.moshimo.com",
+          "date": "Sat, 18 Apr 2026 09:40:35",
+          "status": "approved",
+          "program": ""
+        },
+        {
+          "subject": "もしも会員 仮登録完了のご案内【もしも】",
+          "from": "a-support@info.moshimo.com",
+          "date": "Sat, 18 Apr 2026 09:37:56",
+          "status": "pending",
+          "program": ""
+        },
+        {
+          "subject": "提携が承認されました！【もしもアフィリエイト】",
+          "from": "no-reply@personal.moshimo.com",
+          "date": "Mon, 20 Apr 2026 16:17:29",
+          "status": "approved",
+          "program": ""
+        },
+        {
+          "subject": "提携が承認されました！【もしもアフィリエイト】",
+          "from": "no-reply@personal.moshimo.com",
+          "date": "Mon, 20 Apr 2026 16:16:33",
+          "status": "approved",
+          "program": ""
+        },
+        {
+          "subject": "もしも会員 仮登録の件【もしも】",
+          "from": "a-support@info.moshimo.com",
+          "date": "Mon, 20 Apr 2026 15:45:13",
+          "status": "rejected",
+          "program": ""
+        }
+      ]
+    },
+    "afb": {
+      "site_keys": [
+        "biz-english-ai.com",
+        "ai-gyomu.jp"
+      ],
+      "items": [
+        {
+          "subject": "【afb】パートナー登録申込の承認結果",
+          "from": "noreply@afi-b.com",
+          "date": "Tue, 21 Apr 2026 13:00:26",
+          "status": "rejected",
+          "program": ""
+        },
+        {
+          "subject": "[afb]パートナー申請を承りましたので審査をお待ちください",
+          "from": "noreply@afi-b.com",
+          "date": "Mon, 20 Apr 2026 01:07:46",
+          "status": "pending",
+          "program": ""
+        }
+      ]
+    },
+    "バリューコマース": {
+      "site_keys": [
+        "biz-english-ai.com",
+        "ai-gyomu.jp"
+      ],
+      "items": []
+    },
+    "アクセストレード": {
+      "site_keys": [
+        "biz-english-ai.com",
+        "ai-gyomu.jp"
+      ],
+      "items": []
+    }
+  }
+}
