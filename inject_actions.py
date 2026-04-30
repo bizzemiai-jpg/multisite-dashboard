@@ -31,6 +31,10 @@ EXTRA_CSS = """
 .gsc .pos.mid { color:#ca8a04; }
 .gsc-empty { color:#94a3b8; padding:8px; font-size:12px; }
 .gsc-period { font-size:11px; color:#94a3b8; margin:4px 0 0; text-align:right; }
+.gsc-top { margin:12px 0 16px; padding:10px 12px; background:#f0f9ff; border-left:4px solid #0ea5e9; border-radius:6px; }
+.gsc-top h3 { margin-top:0; color:#0369a1; border-bottom-color:#bae6fd; }
+.gsc-top a.q { color:#0369a1; text-decoration:none; }
+.gsc-top a.q:hover { text-decoration:underline; }
 .asp { font-size:12px; margin:0; padding:0; list-style:none; }
 .asp li { display:grid; grid-template-columns:60px 1fr 70px; gap:8px; padding:6px 8px; border-bottom:1px solid #e2e8f0; align-items:center; }
 .asp li:nth-child(odd) { background:#f8fafc; }
@@ -45,7 +49,8 @@ EXTRA_CSS = """
 
 html = html_path.read_text(encoding="utf-8")
 html = re.sub(r'<h3>🎯 次にやるべきこと</h3><ul class="actions">.*?</ul>', '', html, flags=re.DOTALL)
-html = re.sub(r'<h3>🔍 検索順位 TOP5</h3>.*?(?=<div class="status">|<h3>|$)', '', html, flags=re.DOTALL)
+html = re.sub(r'<h3>🔍 検索順位[^<]*</h3>.*?(?=<div class="status">|<h3>|<div class="kpis">|$)', '', html, flags=re.DOTALL)
+html = re.sub(r'<div class="gsc-top">.*?</div><!--/gsc-top-->', '', html, flags=re.DOTALL)
 html = re.sub(r'<h3>🤝 アフィリ申請状況</h3>.*?(?=<div class="status">|<h3>|$)', '', html, flags=re.DOTALL)
 if ".actions {" not in html:
     html = html.replace("</style>", EXTRA_CSS + "</style>", 1)
@@ -57,26 +62,30 @@ def render_actions(items):
         lis.append(f'<li{cls}><span class="icon">{icon}</span>{text}</li>')
     return f'<h3>🎯 次にやるべきこと</h3><ul class="actions">{"".join(lis)}</ul>'
 
-def render_gsc(site_key):
+def render_gsc_top(site_key):
+    """100位以内のクエリをカード最上段に表示（順位昇順）"""
     gsc_url = GSC_KEYS.get(site_key)
     period = gsc.get("period", "")
     site_data = gsc.get("sites", {}).get(gsc_url, {})
-    rows = site_data.get("rows", [])[:5]
+    all_rows = site_data.get("rows", [])
+    rows = sorted([r for r in all_rows if r.get("position", 999) <= 100], key=lambda r: r["position"])
     if not rows:
-        return ('<h3>🔍 検索順位 TOP5</h3>'
-                '<div class="gsc-empty">データ蓄積中（GSC所有権確認後 1〜2日で反映）</div>')
+        return ('<div class="gsc-top"><h3>🔍 検索順位（100位以内）</h3>'
+                '<div class="gsc-empty">100位以内の記事なし</div></div><!--/gsc-top-->')
     lis = []
     for r in rows:
         pos = r["position"]
         cls = "good" if pos <= 10 else ("mid" if pos <= 30 else "")
         q = r["query"].replace("<","&lt;").replace(">","&gt;")
+        page = r.get("page", "")
         lis.append(
-            f'<li><span class="q" title="{q}">{q}</span>'
+            f'<li><a class="q" href="{page}" target="_blank" title="{q}">{q}</a>'
             f'<span class="imp">{r["impressions"]}</span>'
             f'<span class="pos {cls}">{pos}</span></li>'
         )
-    return (f'<h3>🔍 検索順位 TOP5</h3><ul class="gsc">{"".join(lis)}</ul>'
-            f'<p class="gsc-period">{period} ・ クエリ / 表示回数 / 順位</p>')
+    return (f'<div class="gsc-top"><h3>🔍 検索順位（100位以内・{len(rows)}件）</h3>'
+            f'<ul class="gsc">{"".join(lis)}</ul>'
+            f'<p class="gsc-period">{period} ・ クエリ / 表示 / 順位</p></div><!--/gsc-top-->')
 
 def fmt_date(s):
     # "Sat, 18 Apr 2026 09:32:42" → "4/18"
@@ -116,10 +125,20 @@ def render_asp(site_key):
             f'<p class="gsc-period">Gmail取得: {fetched}</p>')
 
 for site in actions:
+    # 1) GSC100位以内をカード最上段（card-head直後・kpisの直前）に注入
+    top_pat = re.compile(
+        r'(' + re.escape(site) + r' ↗</a>\s*</div>)\s*(<div class="kpis">)',
+        re.DOTALL,
+    )
+    top_block = render_gsc_top(site)
+    html, n_top = top_pat.subn(
+        lambda m, b=top_block: m.group(1) + b + m.group(2), html, count=1
+    )
+    # 2) アクション・ASPはカード末尾（status直前）に注入
     pat = re.compile(r'(' + re.escape(site) + r' ↗</a>.*?)(<div class="status">)', re.DOTALL)
-    block = render_actions(actions[site]) + render_gsc(site) + render_asp(site)
+    block = render_actions(actions[site]) + render_asp(site)
     html, n = pat.subn(lambda m, b=block: m.group(1) + b + m.group(2), html, count=1)
-    print(f"{site}: injected={n}")
+    print(f"{site}: top_injected={n_top} bottom_injected={n}")
 
 html_path.write_text(html, encoding="utf-8")
 print("[OK] actions + GSC injected into index.html")
