@@ -4,10 +4,18 @@
     "label": "AI英会話アプリ",
     "color": "#3b82f6",
     "url": "https://biz-english-ai.com",
-    "published_total": 40,
-    "future_total": 26,
-    "published_7d": 8,
+    "published_total": 41,
+    "future_total": 25,
+    "published_7d": 7,
     "latest_published": [
+      {
+        "id": 825,
+        "date": "2026-05-01T14:47:00",
+        "link": "https://biz-english-ai.com/studysapuri-english-vs-nativecamp-comparison-2026/",
+        "title": {
+          "rendered": "スタディサプリENGLISH vs ネイティブキャンプ｜AIと人間講師どちらで学ぶべきか比較【2026年】"
+        }
+      },
       {
         "id": 818,
         "date": "2026-04-30T09:29:00",
@@ -39,25 +47,9 @@
         "title": {
           "rendered": "ELSA Speak の料金プランと支払い方法を完全解説｜最安で始める方法【2026年】"
         }
-      },
-      {
-        "id": 805,
-        "date": "2026-04-26T10:00:00",
-        "link": "https://biz-english-ai.com/speak-app-pricing-plan-2026/",
-        "title": {
-          "rendered": "Speak（スピーク）料金プラン完全解説｜月額・年額どっちがお得？【2026年版】"
-        }
       }
     ],
     "upcoming": [
-      {
-        "id": 825,
-        "date": "2026-05-01T14:47:00",
-        "link": "https://biz-english-ai.com/?p=825",
-        "title": {
-          "rendered": "スタディサプリENGLISH vs ネイティブキャンプ｜AIと人間講師どちらで学ぶべきか比較【2026年】"
-        }
-      },
       {
         "id": 807,
         "date": "2026-05-02T12:41:00",
@@ -104,6 +96,14 @@
         "link": "https://biz-english-ai.com/?p=830",
         "title": {
           "rendered": "ネイティブキャンプ は初心者でも大丈夫？英語が話せない人向けの始め方と講師選び【2026年】"
+        }
+      },
+      {
+        "id": 809,
+        "date": "2026-05-09T21:07:00",
+        "link": "https://biz-english-ai.com/?p=809",
+        "title": {
+          "rendered": "SpeakのAI発音矯正の仕組みとは？OpenAI提携で何が変わった？【2026年版】"
         }
       }
     ],
@@ -226,7 +226,7 @@
     "url": "https://side-invest.com",
     "published_total": 24,
     "future_total": 8,
-    "published_7d": 6,
+    "published_7d": 3,
     "latest_published": [
       {
         "id": 1216,

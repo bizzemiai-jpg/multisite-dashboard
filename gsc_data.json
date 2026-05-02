@@ -1,41 +1,17 @@
 {
-  "period": "2026-03-31 〜 2026-04-28",
+  "period": "2026-04-02 〜 2026-04-30",
   "sites": {
     "https://biz-english-ai.com/": {
-      "rows": [
-        {
-          "query": "ai 英会話 無料",
-          "page": "https://biz-english-ai.com/free-ai-english-conversation-app/",
-          "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 94
-        }
-      ]
+      "error": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})",
+      "rows": []
     },
     "https://ai-gyomu.jp/": {
-      "rows": [
-        {
-          "query": "aiライティング, transcope, 個人ブロガー",
-          "page": "https://ai-gyomu.jp/2026/02/19/transcope-how-to-use-blog/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 1.5
-        }
-      ]
+      "error": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})",
+      "rows": []
     },
     "https://side-invest.com/": {
-      "rows": [
-        {
-          "query": "freee マネーフォワード 比較 法人",
-          "page": "https://side-invest.com/2026/02/28/freee-vs-mf-fukugyo/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 94.5
-        }
-      ]
+      "error": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})",
+      "rows": []
     }
   }
 }

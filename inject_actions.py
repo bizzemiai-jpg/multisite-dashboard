@@ -35,6 +35,18 @@ EXTRA_CSS = """
 .gsc-top h3 { margin-top:0; color:#0369a1; border-bottom-color:#bae6fd; }
 .gsc-top a.q { color:#0369a1; text-decoration:none; }
 .gsc-top a.q:hover { text-decoration:underline; }
+.gsc-global { max-width:1400px; margin:0 auto 24px; background:#fff; padding:20px 24px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.06); border-top:6px solid #0ea5e9; }
+.gsc-global h2 { margin:0 0 12px; font-size:20px; color:#0369a1; }
+.gsc-global ul { list-style:none; padding:0; margin:0; font-size:13px; }
+.gsc-global li { display:grid; grid-template-columns:90px 1fr 60px 60px; gap:10px; padding:8px 10px; border-bottom:1px solid #e2e8f0; align-items:center; }
+.gsc-global li:nth-child(odd) { background:#f8fafc; }
+.gsc-global .site { font-size:11px; font-weight:700; padding:2px 6px; border-radius:4px; text-align:center; color:#fff; }
+.gsc-global a.q { color:#0369a1; text-decoration:none; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.gsc-global a.q:hover { text-decoration:underline; }
+.gsc-global .imp { color:#64748b; text-align:right; font-variant-numeric:tabular-nums; }
+.gsc-global .pos { color:#0f172a; text-align:right; font-weight:700; font-variant-numeric:tabular-nums; }
+.gsc-global .pos.good { color:#16a34a; }
+.gsc-global .pos.mid { color:#ca8a04; }
 .asp { font-size:12px; margin:0; padding:0; list-style:none; }
 .asp li { display:grid; grid-template-columns:60px 1fr 70px; gap:8px; padding:6px 8px; border-bottom:1px solid #e2e8f0; align-items:center; }
 .asp li:nth-child(odd) { background:#f8fafc; }
@@ -51,6 +63,7 @@ html = html_path.read_text(encoding="utf-8")
 html = re.sub(r'<h3>🎯 次にやるべきこと</h3><ul class="actions">.*?</ul>', '', html, flags=re.DOTALL)
 html = re.sub(r'<h3>🔍 検索順位[^<]*</h3>.*?(?=<div class="status">|<h3>|<div class="kpis">|$)', '', html, flags=re.DOTALL)
 html = re.sub(r'<div class="gsc-top">.*?</div><!--/gsc-top-->', '', html, flags=re.DOTALL)
+html = re.sub(r'<section class="gsc-global">.*?</section><!--/gsc-global-->', '', html, flags=re.DOTALL)
 html = re.sub(r'<h3>🤝 アフィリ申請状況</h3>.*?(?=<div class="status">|<h3>|$)', '', html, flags=re.DOTALL)
 if ".actions {" not in html:
     html = html.replace("</style>", EXTRA_CSS + "</style>", 1)
@@ -62,30 +75,50 @@ def render_actions(items):
         lis.append(f'<li{cls}><span class="icon">{icon}</span>{text}</li>')
     return f'<h3>🎯 次にやるべきこと</h3><ul class="actions">{"".join(lis)}</ul>'
 
-def render_gsc_top(site_key):
-    """100位以内のクエリをカード最上段に表示（順位昇順）"""
-    gsc_url = GSC_KEYS.get(site_key)
+SITE_COLORS = {
+    "biz-english-ai.com": "#3b82f6",
+    "ai-gyomu.jp":        "#10b981",
+    "side-invest.com":    "#f59e0b",
+}
+SITE_SHORT = {
+    "biz-english-ai.com": "biz-eng",
+    "ai-gyomu.jp":        "ai-gyomu",
+    "side-invest.com":    "side-inv",
+}
+
+def render_gsc_global():
+    """3サイト横断の100位以内ランクイン記事をまとめて最上部に表示（順位昇順）"""
     period = gsc.get("period", "")
-    site_data = gsc.get("sites", {}).get(gsc_url, {})
-    all_rows = site_data.get("rows", [])
-    rows = sorted([r for r in all_rows if r.get("position", 999) <= 100], key=lambda r: r["position"])
-    if not rows:
-        return ('<div class="gsc-top"><h3>🔍 検索順位（100位以内）</h3>'
-                '<div class="gsc-empty">100位以内の記事なし</div></div><!--/gsc-top-->')
+    merged = []
+    for site_key, gsc_url in GSC_KEYS.items():
+        rows = gsc.get("sites", {}).get(gsc_url, {}).get("rows", [])
+        for r in rows:
+            if r.get("position", 999) <= 100:
+                merged.append({**r, "_site": site_key})
+    merged.sort(key=lambda r: r["position"])
+    if not merged:
+        return ('<section class="gsc-global"><h2>🔍 100位以内ランクイン記事（全サイト）</h2>'
+                '<div class="gsc-empty">100位以内の記事なし</div></section><!--/gsc-global-->')
     lis = []
-    for r in rows:
+    for r in merged:
         pos = r["position"]
         cls = "good" if pos <= 10 else ("mid" if pos <= 30 else "")
         q = r["query"].replace("<","&lt;").replace(">","&gt;")
         page = r.get("page", "")
+        site_key = r["_site"]
+        color = SITE_COLORS.get(site_key, "#64748b")
+        short = SITE_SHORT.get(site_key, site_key)
         lis.append(
-            f'<li><a class="q" href="{page}" target="_blank" title="{q}">{q}</a>'
+            f'<li><span class="site" style="background:{color};">{short}</span>'
+            f'<a class="q" href="{page}" target="_blank" title="{q}">{q}</a>'
             f'<span class="imp">{r["impressions"]}</span>'
             f'<span class="pos {cls}">{pos}</span></li>'
         )
-    return (f'<div class="gsc-top"><h3>🔍 検索順位（100位以内・{len(rows)}件）</h3>'
-            f'<ul class="gsc">{"".join(lis)}</ul>'
-            f'<p class="gsc-period">{period} ・ クエリ / 表示 / 順位</p></div><!--/gsc-top-->')
+    return (f'<section class="gsc-global">'
+            f'<h2>🔍 100位以内ランクイン記事（全サイト・{len(merged)}件）</h2>'
+            f'<ul>{"".join(lis)}</ul>'
+            f'<p class="gsc-period">{period} ・ サイト / クエリ / 表示 / 順位</p>'
+            f'</section><!--/gsc-global-->')
 
 def fmt_date(s):
     # "Sat, 18 Apr 2026 09:32:42" → "4/18"
@@ -124,21 +157,17 @@ def render_asp(site_key):
     return (f'<h3>🤝 アフィリ申請状況</h3>{"".join(blocks)}'
             f'<p class="gsc-period">Gmail取得: {fetched}</p>')
 
+global_block = render_gsc_global()
+html, n_g = re.subn(r'(</header>)\s*(<div class="grid">)',
+                    lambda m: m.group(1) + global_block + m.group(2), html, count=1)
+print(f"global gsc injected={n_g}")
+
 for site in actions:
-    # 1) GSC100位以内をカード最上段（card-head直後・kpisの直前）に注入
-    top_pat = re.compile(
-        r'(' + re.escape(site) + r' ↗</a>\s*</div>)\s*(<div class="kpis">)',
-        re.DOTALL,
-    )
-    top_block = render_gsc_top(site)
-    html, n_top = top_pat.subn(
-        lambda m, b=top_block: m.group(1) + b + m.group(2), html, count=1
-    )
-    # 2) アクション・ASPはカード末尾（status直前）に注入
+    # アクション・ASPはカード末尾（status直前）に注入
     pat = re.compile(r'(' + re.escape(site) + r' ↗</a>.*?)(<div class="status">)', re.DOTALL)
     block = render_actions(actions[site]) + render_asp(site)
     html, n = pat.subn(lambda m, b=block: m.group(1) + b + m.group(2), html, count=1)
-    print(f"{site}: top_injected={n_top} bottom_injected={n}")
+    print(f"{site}: bottom_injected={n}")
 
 html_path.write_text(html, encoding="utf-8")
 print("[OK] actions + GSC injected into index.html")

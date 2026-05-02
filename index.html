@@ -50,6 +50,18 @@ h3 { font-size:14px; color:#475569; margin:16px 0 8px; padding-bottom:4px; borde
 .gsc-top h3 { margin-top:0; color:#0369a1; border-bottom-color:#bae6fd; }
 .gsc-top a.q { color:#0369a1; text-decoration:none; }
 .gsc-top a.q:hover { text-decoration:underline; }
+.gsc-global { max-width:1400px; margin:0 auto 24px; background:#fff; padding:20px 24px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.06); border-top:6px solid #0ea5e9; }
+.gsc-global h2 { margin:0 0 12px; font-size:20px; color:#0369a1; }
+.gsc-global ul { list-style:none; padding:0; margin:0; font-size:13px; }
+.gsc-global li { display:grid; grid-template-columns:90px 1fr 60px 60px; gap:10px; padding:8px 10px; border-bottom:1px solid #e2e8f0; align-items:center; }
+.gsc-global li:nth-child(odd) { background:#f8fafc; }
+.gsc-global .site { font-size:11px; font-weight:700; padding:2px 6px; border-radius:4px; text-align:center; color:#fff; }
+.gsc-global a.q { color:#0369a1; text-decoration:none; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.gsc-global a.q:hover { text-decoration:underline; }
+.gsc-global .imp { color:#64748b; text-align:right; font-variant-numeric:tabular-nums; }
+.gsc-global .pos { color:#0f172a; text-align:right; font-weight:700; font-variant-numeric:tabular-nums; }
+.gsc-global .pos.good { color:#16a34a; }
+.gsc-global .pos.mid { color:#ca8a04; }
 .asp { font-size:12px; margin:0; padding:0; list-style:none; }
 .asp li { display:grid; grid-template-columns:60px 1fr 70px; gap:8px; padding:6px 8px; border-bottom:1px solid #e2e8f0; align-items:center; }
 .asp li:nth-child(odd) { background:#f8fafc; }
@@ -65,27 +77,27 @@ h3 { font-size:14px; color:#475569; margin:16px 0 8px; padding-bottom:4px; borde
 <body>
 <header>
   <h1>📊 3サイト統合ダッシュボード</h1>
-  <div class="sub">最終更新: 2026-04-30 13:21</div>
+  <div class="sub">最終更新: 2026-05-02 10:42</div>
   <div class="totals">
-    <div class="total"><div class="total-num">99</div><div class="total-label">全体 公開済み記事</div></div>
-    <div class="total"><div class="total-num">45</div><div class="total-label">全体 予約投稿中</div></div>
-    <div class="total"><div class="total-num">16</div><div class="total-label">直近7日で公開</div></div>
+    <div class="total"><div class="total-num">100</div><div class="total-label">全体 公開済み記事</div></div>
+    <div class="total"><div class="total-num">44</div><div class="total-label">全体 予約投稿中</div></div>
+    <div class="total"><div class="total-num">12</div><div class="total-label">直近7日で公開</div></div>
   </div>
-</header>
-<div class="grid">
+</header><section class="gsc-global"><h2>🔍 100位以内ランクイン記事（全サイト）</h2><div class="gsc-empty">100位以内の記事なし</div></section><!--/gsc-global--><div class="grid">
         <div class="card" style="border-top:6px solid #3b82f6;">
           <div class="card-head">
             <h2 style="color:#3b82f6;">AI英会話アプリ</h2>
             <a href="https://biz-english-ai.com" target="_blank" class="site-url">biz-english-ai.com ↗</a>
-          </div><div class="gsc-top"><h3>🔍 検索順位（100位以内・1件）</h3><ul class="gsc"><li><a class="q" href="https://biz-english-ai.com/free-ai-english-conversation-app/" target="_blank" title="ai 英会話 無料">ai 英会話 無料</a><span class="imp">7</span><span class="pos ">94</span></li></ul><p class="gsc-period">2026-03-31 〜 2026-04-28 ・ クエリ / 表示 / 順位</p></div><!--/gsc-top--><div class="kpis">
-            <div class="kpi"><div class="kpi-num">40</div><div class="kpi-label">公開済み</div></div>
-            <div class="kpi"><div class="kpi-num">26</div><div class="kpi-label">予約中</div></div>
-            <div class="kpi"><div class="kpi-num">8</div><div class="kpi-label">直近7日公開</div></div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><div class="kpi-num">41</div><div class="kpi-label">公開済み</div></div>
+            <div class="kpi"><div class="kpi-num">25</div><div class="kpi-label">予約中</div></div>
+            <div class="kpi"><div class="kpi-num">7</div><div class="kpi-label">直近7日公開</div></div>
           </div>
           <h3>📅 今後の予約投稿（直近7件）</h3>
-          <ul class="list upcoming"><li><span class="date">2026-05-01</span> <span class="title">スタディサプリENGLISH vs ネイティブキャンプ｜AIと人間講師どちらで学ぶべきか比較【202</span></li><li><span class="date">2026-05-02</span> <span class="title">Speak（スピーク）は初心者向け？レベル別の使い方と効果的な学習法【2026年】</span></li><li><span class="date">2026-05-04</span> <span class="title">ELSA Speak の発音スコアはどう測定される？AI評価の仕組みと精度を解説【2026年】</span></li><li><span class="date">2026-05-05</span> <span class="title">DMM英会話 のデメリット・悪い口コミを正直まとめ｜後悔しないための注意点【2026年】</span></li><li><span class="date">2026-05-06</span> <span class="title">Speakビジネス英語への活用法｜会議・プレゼン・メールに使えるフレーズ練習術</span></li><li><span class="date">2026-05-07</span> <span class="title">ELSA Speak はビジネス英語に使える？プレゼン・会議フレーズの練習法【2026年】</span></li><li><span class="date">2026-05-08</span> <span class="title">ネイティブキャンプ は初心者でも大丈夫？英語が話せない人向けの始め方と講師選び【2026年】</span></li></ul>
+          <ul class="list upcoming"><li><span class="date">2026-05-02</span> <span class="title">Speak（スピーク）は初心者向け？レベル別の使い方と効果的な学習法【2026年】</span></li><li><span class="date">2026-05-04</span> <span class="title">ELSA Speak の発音スコアはどう測定される？AI評価の仕組みと精度を解説【2026年】</span></li><li><span class="date">2026-05-05</span> <span class="title">DMM英会話 のデメリット・悪い口コミを正直まとめ｜後悔しないための注意点【2026年】</span></li><li><span class="date">2026-05-06</span> <span class="title">Speakビジネス英語への活用法｜会議・プレゼン・メールに使えるフレーズ練習術</span></li><li><span class="date">2026-05-07</span> <span class="title">ELSA Speak はビジネス英語に使える？プレゼン・会議フレーズの練習法【2026年】</span></li><li><span class="date">2026-05-08</span> <span class="title">ネイティブキャンプ は初心者でも大丈夫？英語が話せない人向けの始め方と講師選び【2026年】</span></li><li><span class="date">2026-05-09</span> <span class="title">SpeakのAI発音矯正の仕組みとは？OpenAI提携で何が変わった？【2026年版】</span></li></ul>
           <h3>✅ 最近公開した記事（直近5件）</h3>
-          <ul class="list recent"><li><span class="date">2026-04-30</span> <a href="https://biz-english-ai.com/elsa-speak-cancel-refund-guide-2026/" target="_blank">ELSA Speak の解約・返金方法を図解説明｜課金停止の手順とよくある落とし穴【2026年】</a></li><li><span class="date">2026-04-29</span> <a href="https://biz-english-ai.com/speak-free-trial-cancel-guide/" target="_blank">Speak 無料トライアルの始め方と解約方法｜登録5分で体験できる手順【2026年】</a></li><li><span class="date">2026-04-28</span> <a href="https://biz-english-ai.com/nativecamp-cancel-method-complete-guide-2026/" target="_blank">ネイティブキャンプ の解約・退会方法を完全解説｜無料期間中のやめ方も【2026年】</a></li><li><span class="date">2026-04-27</span> <a href="https://biz-english-ai.com/elsa-speak-pricing-plan-guide-2026/" target="_blank">ELSA Speak の料金プランと支払い方法を完全解説｜最安で始める方法【2026年】</a></li><li><span class="date">2026-04-26</span> <a href="https://biz-english-ai.com/speak-app-pricing-plan-2026/" target="_blank">Speak（スピーク）料金プラン完全解説｜月額・年額どっちがお得？【2026年版】</a></li></ul>
+          <ul class="list recent"><li><span class="date">2026-05-01</span> <a href="https://biz-english-ai.com/studysapuri-english-vs-nativecamp-comparison-2026/" target="_blank">スタディサプリENGLISH vs ネイティブキャンプ｜AIと人間講師どちらで学ぶべきか比較【202</a></li><li><span class="date">2026-04-30</span> <a href="https://biz-english-ai.com/elsa-speak-cancel-refund-guide-2026/" target="_blank">ELSA Speak の解約・返金方法を図解説明｜課金停止の手順とよくある落とし穴【2026年】</a></li><li><span class="date">2026-04-29</span> <a href="https://biz-english-ai.com/speak-free-trial-cancel-guide/" target="_blank">Speak 無料トライアルの始め方と解約方法｜登録5分で体験できる手順【2026年】</a></li><li><span class="date">2026-04-28</span> <a href="https://biz-english-ai.com/nativecamp-cancel-method-complete-guide-2026/" target="_blank">ネイティブキャンプ の解約・退会方法を完全解説｜無料期間中のやめ方も【2026年】</a></li><li><span class="date">2026-04-27</span> <a href="https://biz-english-ai.com/elsa-speak-pricing-plan-guide-2026/" target="_blank">ELSA Speak の料金プランと支払い方法を完全解説｜最安で始める方法【2026年】</a></li></ul>
           <h3>🎯 次にやるべきこと</h3><ul class="actions"><li><span class="icon">⏳</span>DMM英会話 A8承認待ち → 承認後 IDs 132/133/134 リンク差替</li><li><span class="icon">📅</span>afb 再申請（2026-05-24以降・ELSA/Speak/レアジョブ目当て）</li><li><span class="icon">📅</span>Speak A8申請（2026-05-21以降・ロングテール12本公開後）</li><li class="urgent"><span class="icon">🔥</span>もしも提携承認済の4案件→記事内へリンク反映（Gmail検出・案件名要確認）</li><li><span class="icon">📝</span>GSCサイトマップ送信（自動実行済・反映待ち）</li><li><span class="icon">🔍</span>バリューコマース・アクセストレード新規登録検討</li></ul><h3>🤝 アフィリ申請状況</h3><div class="asp-name">もしもアフィリエイト</div><ul class="asp"><li><span class="badge approved">承認</span><span class="subj" title="もしも会員 本登録完了のご案内【もしも】">もしも会員 本登録完了のご案内【もしも】</span><span class="d">4/18</span></li><li><span class="badge pending">審査中</span><span class="subj" title="もしも会員 仮登録完了のご案内【もしも】">もしも会員 仮登録完了のご案内【もしも】</span><span class="d">4/18</span></li><li><span class="badge approved">承認</span><span class="subj" title="提携が承認されました！【もしもアフィリエイト】">提携が承認されました！【もしもアフィリエイト】</span><span class="d">4/20</span></li></ul><div class="asp-name">afb</div><ul class="asp"><li><span class="badge rejected">却下</span><span class="subj" title="【afb】パートナー登録申込の承認結果">【afb】パートナー登録申込の承認結果</span><span class="d">4/21</span></li><li><span class="badge pending">審査中</span><span class="subj" title="[afb]パートナー申請を承りましたので審査をお待ちください">[afb]パートナー申請を承りましたので審査をお待ちください</span><span class="d">4/20</span></li></ul><p class="gsc-period">Gmail取得: 2026-04-30 13:21</p><div class="status">OK</div>
         </div>
         
@@ -93,7 +105,8 @@ h3 { font-size:14px; color:#475569; margin:16px 0 8px; padding-bottom:4px; borde
           <div class="card-head">
             <h2 style="color:#10b981;">AI×業務効率化</h2>
             <a href="https://ai-gyomu.jp" target="_blank" class="site-url">ai-gyomu.jp ↗</a>
-          </div><div class="gsc-top"><h3>🔍 検索順位（100位以内・1件）</h3><ul class="gsc"><li><a class="q" href="https://ai-gyomu.jp/2026/02/19/transcope-how-to-use-blog/" target="_blank" title="aiライティング, transcope, 個人ブロガー">aiライティング, transcope, 個人ブロガー</a><span class="imp">2</span><span class="pos good">1.5</span></li></ul><p class="gsc-period">2026-03-31 〜 2026-04-28 ・ クエリ / 表示 / 順位</p></div><!--/gsc-top--><div class="kpis">
+          </div>
+          <div class="kpis">
             <div class="kpi"><div class="kpi-num">35</div><div class="kpi-label">公開済み</div></div>
             <div class="kpi"><div class="kpi-num">11</div><div class="kpi-label">予約中</div></div>
             <div class="kpi"><div class="kpi-num">2</div><div class="kpi-label">直近7日公開</div></div>
@@ -109,10 +122,11 @@ h3 { font-size:14px; color:#475569; margin:16px 0 8px; padding-bottom:4px; borde
           <div class="card-head">
             <h2 style="color:#f59e0b;">副業×投資</h2>
             <a href="https://side-invest.com" target="_blank" class="site-url">side-invest.com ↗</a>
-          </div><div class="gsc-top"><h3>🔍 検索順位（100位以内・1件）</h3><ul class="gsc"><li><a class="q" href="https://side-invest.com/2026/02/28/freee-vs-mf-fukugyo/" target="_blank" title="freee マネーフォワード 比較 法人">freee マネーフォワード 比較 法人</a><span class="imp">2</span><span class="pos ">94.5</span></li></ul><p class="gsc-period">2026-03-31 〜 2026-04-28 ・ クエリ / 表示 / 順位</p></div><!--/gsc-top--><div class="kpis">
+          </div>
+          <div class="kpis">
             <div class="kpi"><div class="kpi-num">24</div><div class="kpi-label">公開済み</div></div>
             <div class="kpi"><div class="kpi-num">8</div><div class="kpi-label">予約中</div></div>
-            <div class="kpi"><div class="kpi-num">6</div><div class="kpi-label">直近7日公開</div></div>
+            <div class="kpi"><div class="kpi-num">3</div><div class="kpi-label">直近7日公開</div></div>
           </div>
           <h3>📅 今後の予約投稿（直近7件）</h3>
           <ul class="list upcoming"><li><span class="date">2026-05-02</span> <span class="title">副業20万以下でも住民税申告が必要な場合｜会社員の落とし穴と実際の手続き</span></li><li><span class="date">2026-05-04</span> <span class="title">米国株の配当に外国税額控除を使う手順｜副業会社員の確定申告実録</span></li><li><span class="date">2026-05-07</span> <span class="title">SBI・V・S&#038;P500 vs eMAXIS Slim S&#038;P500｜信託報酬と</span></li><li><span class="date">2026-05-10</span> <span class="title">企業型DC マッチング拠出 vs iDeCo 会社員の節税最大化｜同時加入はできる？</span></li><li><span class="date">2026-05-14</span> <span class="title">ふるさと納税 副業収入込みの上限額を計算する実例｜給与+副業パターン</span></li><li><span class="date">2026-05-17</span> <span class="title">NVIDIAの株式分割 履歴を振り返る｜4対1→10対1で取得単価はどう動いたか</span></li><li><span class="date">2026-05-21</span> <span class="title">楽天証券からSBI証券へ投資信託を移管する手順｜実際にやってみた体験記</span></li></ul>
