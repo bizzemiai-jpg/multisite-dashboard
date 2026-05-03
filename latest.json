@@ -4,10 +4,18 @@
     "label": "AI英会話アプリ",
     "color": "#3b82f6",
     "url": "https://biz-english-ai.com",
-    "published_total": 41,
-    "future_total": 25,
+    "published_total": 42,
+    "future_total": 24,
     "published_7d": 7,
     "latest_published": [
+      {
+        "id": 807,
+        "date": "2026-05-02T12:41:00",
+        "link": "https://biz-english-ai.com/speak-app-beginner-level-guide/",
+        "title": {
+          "rendered": "Speak（スピーク）は初心者向け？レベル別の使い方と効果的な学習法【2026年】"
+        }
+      },
       {
         "id": 825,
         "date": "2026-05-01T14:47:00",
@@ -39,25 +47,9 @@
         "title": {
           "rendered": "ネイティブキャンプ の解約・退会方法を完全解説｜無料期間中のやめ方も【2026年】"
         }
-      },
-      {
-        "id": 817,
-        "date": "2026-04-27T10:00:00",
-        "link": "https://biz-english-ai.com/elsa-speak-pricing-plan-guide-2026/",
-        "title": {
-          "rendered": "ELSA Speak の料金プランと支払い方法を完全解説｜最安で始める方法【2026年】"
-        }
       }
     ],
     "upcoming": [
-      {
-        "id": 807,
-        "date": "2026-05-02T12:41:00",
-        "link": "https://biz-english-ai.com/?p=807",
-        "title": {
-          "rendered": "Speak（スピーク）は初心者向け？レベル別の使い方と効果的な学習法【2026年】"
-        }
-      },
       {
         "id": 819,
         "date": "2026-05-04T08:41:00",
@@ -105,6 +97,14 @@
         "title": {
           "rendered": "SpeakのAI発音矯正の仕組みとは？OpenAI提携で何が変わった？【2026年版】"
         }
+      },
+      {
+        "id": 821,
+        "date": "2026-05-10T21:07:00",
+        "link": "https://biz-english-ai.com/?p=821",
+        "title": {
+          "rendered": "ELSA Speak のデメリット・悪い口コミを正直まとめ｜買って後悔しないために【2026年】"
+        }
       }
     ],
     "status": "OK"
@@ -116,7 +116,7 @@
     "url": "https://ai-gyomu.jp",
     "published_total": 35,
     "future_total": 11,
-    "published_7d": 2,
+    "published_7d": 1,
     "latest_published": [
       {
         "id": 192,
@@ -224,10 +224,18 @@
     "label": "副業×投資",
     "color": "#f59e0b",
     "url": "https://side-invest.com",
-    "published_total": 24,
-    "future_total": 8,
-    "published_7d": 3,
+    "published_total": 25,
+    "future_total": 7,
+    "published_7d": 4,
     "latest_published": [
+      {
+        "id": 734,
+        "date": "2026-05-02T12:20:00",
+        "link": "https://side-invest.com/2026/05/02/fukugyo-20man-juminzei-hisshu/",
+        "title": {
+          "rendered": "副業20万以下でも住民税申告が必要な場合｜会社員の落とし穴と実際の手続き"
+        }
+      },
       {
         "id": 1216,
         "date": "2026-04-29T12:03:11",
@@ -259,25 +267,9 @@
         "title": {
           "rendered": "【共働き夫婦】実家暮らし期間の貯蓄シミュレーション｜年100万円差をつくる方法"
         }
-      },
-      {
-        "id": 354,
-        "date": "2026-04-24T17:44:50",
-        "link": "https://side-invest.com/2026/04/24/kigyo-dc-1145man-all-fund-review/",
-        "title": {
-          "rendered": "【夫婦の資産運用】ジョイント口座vs個別口座 メリット・デメリット完全比較"
-        }
       }
     ],
     "upcoming": [
-      {
-        "id": 734,
-        "date": "2026-05-02T12:20:00",
-        "link": "https://side-invest.com/?p=734",
-        "title": {
-          "rendered": "副業20万以下でも住民税申告が必要な場合｜会社員の落とし穴と実際の手続き"
-        }
-      },
       {
         "id": 735,
         "date": "2026-05-04T19:45:00",
@@ -324,6 +316,14 @@
         "link": "https://side-invest.com/?p=740",
         "title": {
           "rendered": "楽天証券からSBI証券へ投資信託を移管する手順｜実際にやってみた体験記"
+        }
+      },
+      {
+        "id": 741,
+        "date": "2026-05-25T11:00:00",
+        "link": "https://side-invest.com/?p=741",
+        "title": {
+          "rendered": "新NISA 成長投資枠の埋め方｜年240万×5年で1,200万を最速で使う"
         }
       }
     ],

@@ -1,5 +1,5 @@
 {
-  "period": "2026-04-02 〜 2026-04-30",
+  "period": "2026-04-03 〜 2026-05-01",
   "sites": {
     "https://biz-english-ai.com/": {
       "rows": [
@@ -7,9 +7,9 @@
           "query": "ai 英会話 無料",
           "page": "https://biz-english-ai.com/free-ai-english-conversation-app/",
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 13,
           "ctr": 0,
-          "position": 94.9
+          "position": 94.8
         },
         {
           "query": "elsa speak",
