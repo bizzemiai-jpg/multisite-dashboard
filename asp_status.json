@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-03T09:49:26",
+  "fetched_at": "2026-05-08T11:16:53",
   "asps": {
     "A8.net": {
       "site_keys": [
@@ -86,6 +86,56 @@
         "ai-gyomu.jp"
       ],
       "items": []
+    },
+    "Impact (ELSA Speak)": {
+      "site_keys": [
+        "biz-english-ai.com"
+      ],
+      "items": []
+    },
+    "PayPal": {
+      "site_keys": [
+        "biz-english-ai.com"
+      ],
+      "items": [
+        {
+          "subject": "PayPalでビジネスを始めましょう",
+          "from": "service-jp@paypal.com",
+          "date": "Thu, 07 May 2026 17:47:58",
+          "status": "approved",
+          "program": ""
+        },
+        {
+          "subject": "本人確認が完了しました",
+          "from": "service-jp@paypal.com",
+          "date": "Thu, 07 May 2026 17:47:38",
+          "status": "approved",
+          "program": ""
+        },
+        {
+          "subject": "ご対応ください: PayPalアカウントのご利用を開始するには、本人確認を行ってください",
+          "from": "service-jp@paypal.com",
+          "date": "Thu, 07 May 2026 17:00:30",
+          "status": "pending",
+          "program": ""
+        }
+      ]
+    },
+    "tl;dv (cello)": {
+      "site_keys": [
+        "ai-gyomu.jp"
+      ],
+      "items": []
     }
+  },
+  "conversions": [],
+  "conversion_summary": {
+    "jpy_total": 0,
+    "usd_total": 0.0,
+    "count": 0,
+    "by_asp": {},
+    "by_program": {},
+    "this_month_jpy": 0,
+    "this_month_usd": 0.0
   }
 }

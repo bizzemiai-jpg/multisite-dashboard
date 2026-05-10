@@ -4,106 +4,106 @@
     "label": "AI英会話アプリ",
     "color": "#3b82f6",
     "url": "https://biz-english-ai.com",
-    "published_total": 42,
-    "future_total": 24,
-    "published_7d": 7,
+    "published_total": 48,
+    "future_total": 18,
+    "published_7d": 6,
     "latest_published": [
       {
-        "id": 807,
-        "date": "2026-05-02T12:41:00",
-        "link": "https://biz-english-ai.com/speak-app-beginner-level-guide/",
+        "id": 809,
+        "date": "2026-05-09T21:07:00",
+        "link": "https://biz-english-ai.com/speak-ai-pronunciation-openai-2026/",
         "title": {
-          "rendered": "Speak（スピーク）は初心者向け？レベル別の使い方と効果的な学習法【2026年】"
-        }
-      },
-      {
-        "id": 825,
-        "date": "2026-05-01T14:47:00",
-        "link": "https://biz-english-ai.com/studysapuri-english-vs-nativecamp-comparison-2026/",
-        "title": {
-          "rendered": "スタディサプリENGLISH vs ネイティブキャンプ｜AIと人間講師どちらで学ぶべきか比較【2026年】"
-        }
-      },
-      {
-        "id": 818,
-        "date": "2026-04-30T09:29:00",
-        "link": "https://biz-english-ai.com/elsa-speak-cancel-refund-guide-2026/",
-        "title": {
-          "rendered": "ELSA Speak の解約・返金方法を図解説明｜課金停止の手順とよくある落とし穴【2026年】"
-        }
-      },
-      {
-        "id": 806,
-        "date": "2026-04-29T10:00:00",
-        "link": "https://biz-english-ai.com/speak-free-trial-cancel-guide/",
-        "title": {
-          "rendered": "Speak 無料トライアルの始め方と解約方法｜登録5分で体験できる手順【2026年】"
-        }
-      },
-      {
-        "id": 829,
-        "date": "2026-04-28T10:00:00",
-        "link": "https://biz-english-ai.com/nativecamp-cancel-method-complete-guide-2026/",
-        "title": {
-          "rendered": "ネイティブキャンプ の解約・退会方法を完全解説｜無料期間中のやめ方も【2026年】"
-        }
-      }
-    ],
-    "upcoming": [
-      {
-        "id": 819,
-        "date": "2026-05-04T08:41:00",
-        "link": "https://biz-english-ai.com/?p=819",
-        "title": {
-          "rendered": "ELSA Speak の発音スコアはどう測定される？AI評価の仕組みと精度を解説【2026年】"
-        }
-      },
-      {
-        "id": 835,
-        "date": "2026-05-05T18:47:00",
-        "link": "https://biz-english-ai.com/?p=835",
-        "title": {
-          "rendered": "DMM英会話 のデメリット・悪い口コミを正直まとめ｜後悔しないための注意点【2026年】"
-        }
-      },
-      {
-        "id": 808,
-        "date": "2026-05-06T20:23:00",
-        "link": "https://biz-english-ai.com/?p=808",
-        "title": {
-          "rendered": "Speakビジネス英語への活用法｜会議・プレゼン・メールに使えるフレーズ練習術"
-        }
-      },
-      {
-        "id": 820,
-        "date": "2026-05-07T11:47:00",
-        "link": "https://biz-english-ai.com/?p=820",
-        "title": {
-          "rendered": "ELSA Speak はビジネス英語に使える？プレゼン・会議フレーズの練習法【2026年】"
+          "rendered": "SpeakのAI発音矯正の仕組みとは？OpenAI提携で何が変わった？【2026年版】"
         }
       },
       {
         "id": 830,
         "date": "2026-05-08T11:53:00",
-        "link": "https://biz-english-ai.com/?p=830",
+        "link": "https://biz-english-ai.com/nativecamp-beginner-starter-guide-2026/",
         "title": {
           "rendered": "ネイティブキャンプ は初心者でも大丈夫？英語が話せない人向けの始め方と講師選び【2026年】"
         }
       },
       {
-        "id": 809,
-        "date": "2026-05-09T21:07:00",
-        "link": "https://biz-english-ai.com/?p=809",
+        "id": 820,
+        "date": "2026-05-07T11:47:00",
+        "link": "https://biz-english-ai.com/elsa-speak-business-english-usage-guide/",
         "title": {
-          "rendered": "SpeakのAI発音矯正の仕組みとは？OpenAI提携で何が変わった？【2026年版】"
+          "rendered": "ELSA Speak はビジネス英語に使える？プレゼン・会議フレーズの練習法【2026年】"
         }
       },
+      {
+        "id": 808,
+        "date": "2026-05-06T20:23:00",
+        "link": "https://biz-english-ai.com/speak-app-business-english-guide/",
+        "title": {
+          "rendered": "Speakビジネス英語への活用法｜会議・プレゼン・メールに使えるフレーズ練習術"
+        }
+      },
+      {
+        "id": 835,
+        "date": "2026-05-05T18:47:00",
+        "link": "https://biz-english-ai.com/dmm-eikaiwa-demerit-honest-review-2026/",
+        "title": {
+          "rendered": "DMM英会話 のデメリット・悪い口コミを正直まとめ｜後悔しないための注意点【2026年】"
+        }
+      }
+    ],
+    "upcoming": [
       {
         "id": 821,
         "date": "2026-05-10T21:07:00",
         "link": "https://biz-english-ai.com/?p=821",
         "title": {
           "rendered": "ELSA Speak のデメリット・悪い口コミを正直まとめ｜買って後悔しないために【2026年】"
+        }
+      },
+      {
+        "id": 826,
+        "date": "2026-05-12T22:02:00",
+        "link": "https://biz-english-ai.com/?p=826",
+        "title": {
+          "rendered": "スタディサプリENGLISH AI英会話機能の実力は？人間講師との違いを検証【2026年】"
+        }
+      },
+      {
+        "id": 831,
+        "date": "2026-05-13T11:41:00",
+        "link": "https://biz-english-ai.com/?p=831",
+        "title": {
+          "rendered": "ネイティブキャンプ のデメリット・悪い口コミを正直レビュー｜向かない人の特徴まとめ【2026年】"
+        }
+      },
+      {
+        "id": 810,
+        "date": "2026-05-14T16:34:00",
+        "link": "https://biz-english-ai.com/?p=810",
+        "title": {
+          "rendered": "Speak（スピーク）3ヶ月継続の効果検証｜実際に変わること・変わらないこと"
+        }
+      },
+      {
+        "id": 822,
+        "date": "2026-05-15T16:58:00",
+        "link": "https://biz-english-ai.com/?p=822",
+        "title": {
+          "rendered": "ELSA Speak vs スタディサプリENGLISH｜発音特化 vs 総合学習どちらを選ぶべきか【2026年】"
+        }
+      },
+      {
+        "id": 836,
+        "date": "2026-05-17T13:23:00",
+        "link": "https://biz-english-ai.com/?p=836",
+        "title": {
+          "rendered": "DMM英会話 は初心者でも使える？英語が全く話せない人向けの活用法【2026年】"
+        }
+      },
+      {
+        "id": 832,
+        "date": "2026-05-19T12:29:00",
+        "link": "https://biz-english-ai.com/?p=832",
+        "title": {
+          "rendered": "ネイティブキャンプ のビジネス英語コースは使える？社会人向け活用法と効果検証【2026年】"
         }
       }
     ],
@@ -114,16 +114,32 @@
     "label": "AI×業務効率化",
     "color": "#10b981",
     "url": "https://ai-gyomu.jp",
-    "published_total": 35,
-    "future_total": 11,
-    "published_7d": 1,
+    "published_total": 37,
+    "future_total": 9,
+    "published_7d": 2,
     "latest_published": [
+      {
+        "id": 194,
+        "date": "2026-05-07T13:42:00",
+        "link": "https://ai-gyomu.jp/2026/05/07/kojin-kakutei-kaigo-guide/",
+        "title": {
+          "rendered": "個人事業主の確定申告 会計ソフト選び方ガイド【freee・MF・弥生を状況別に比較】"
+        }
+      },
+      {
+        "id": 193,
+        "date": "2026-05-03T11:23:00",
+        "link": "https://ai-gyomu.jp/2026/05/03/dx-saas-hajimeni/",
+        "title": {
+          "rendered": "中小企業DXで最初に入れるべきSaaS3選【Power Automate担当者が解説】"
+        }
+      },
       {
         "id": 192,
         "date": "2026-04-27T19:57:00",
         "link": "https://ai-gyomu.jp/2026/04/27/yayoi-review/",
         "title": {
-          "rendered": "弥生会計オンライン 評判・料金レビュー【2026年】初年度無料の実態とSaaS連携の弱点"
+          "rendered": "弥生会計オンライン 料金 2026年版｜全プラン・freee/MF比較・初年度無料の罠を実体験で解説"
         }
       },
       {
@@ -131,7 +147,7 @@
         "date": "2026-04-25T12:14:00",
         "link": "https://ai-gyomu.jp/2026/04/25/tldv-review/",
         "title": {
-          "rendered": "tl;dvの評判・料金・機能レビュー【2026年】Nottaとの違いと使い分け"
+          "rendered": "tl;dv 評判は本当？2026年版で実体験レビュー｜料金・日本語精度・Notta比較まで全部正直に書く"
         }
       },
       {
@@ -141,41 +157,9 @@
         "title": {
           "rendered": "電子契約が社内に定着しない3つの理由と対策【DX推進担当の経験から】【2026年版】"
         }
-      },
-      {
-        "id": 188,
-        "date": "2026-04-20T00:00:00",
-        "link": "https://ai-gyomu.jp/2026/04/20/cloudsign-pricing-howto/",
-        "title": {
-          "rendered": "クラウドサイン 料金プランを徹底解説｜無料・有料の違いと使い方【2026年版】"
-        }
-      },
-      {
-        "id": 187,
-        "date": "2026-04-16T15:22:28",
-        "link": "https://ai-gyomu.jp/2026/04/16/denshikeiyaku-guide/",
-        "title": {
-          "rendered": "電子契約とは？仕組み・法的効力・導入メリットをわかりやすく解説【2026年版】"
-        }
       }
     ],
     "upcoming": [
-      {
-        "id": 193,
-        "date": "2026-05-03T11:23:00",
-        "link": "https://ai-gyomu.jp/?p=193",
-        "title": {
-          "rendered": "中小企業DXで最初に入れるべきSaaS3選【Power Automate担当者が解説】"
-        }
-      },
-      {
-        "id": 194,
-        "date": "2026-05-07T13:42:00",
-        "link": "https://ai-gyomu.jp/?p=194",
-        "title": {
-          "rendered": "個人事業主の確定申告 会計ソフト選び方ガイド【freee・MF・弥生を状況別に比較】"
-        }
-      },
       {
         "id": 195,
         "date": "2026-05-10T13:14:00",
@@ -215,6 +199,22 @@
         "title": {
           "rendered": "AI議事録ツールの選び方ガイド【Notta・tl;dv・Rimoを用途別に比較 2026年版】"
         }
+      },
+      {
+        "id": 200,
+        "date": "2026-05-31T20:37:00",
+        "link": "https://ai-gyomu.jp/?p=200",
+        "title": {
+          "rendered": "freeeとマネーフォワード、DX推進担当目線で選ぶならどちら？【2026年比較】"
+        }
+      },
+      {
+        "id": 201,
+        "date": "2026-06-03T14:14:00",
+        "link": "https://ai-gyomu.jp/?p=201",
+        "title": {
+          "rendered": "クラウドサイン料金プランの選び方【個人事業主・中小企業はどのプランが最適？】"
+        }
       }
     ],
     "status": "OK"
@@ -224,68 +224,52 @@
     "label": "副業×投資",
     "color": "#f59e0b",
     "url": "https://side-invest.com",
-    "published_total": 25,
-    "future_total": 7,
-    "published_7d": 4,
+    "published_total": 32,
+    "future_total": 5,
+    "published_7d": 7,
     "latest_published": [
       {
-        "id": 734,
-        "date": "2026-05-02T12:20:00",
-        "link": "https://side-invest.com/2026/05/02/fukugyo-20man-juminzei-hisshu/",
+        "id": 1539,
+        "date": "2026-05-08T17:57:55",
+        "link": "https://side-invest.com/2026/05/08/couple-total-assets-50million-achieved-2026-05-08/",
         "title": {
-          "rendered": "副業20万以下でも住民税申告が必要な場合｜会社員の落とし穴と実際の手続き"
+          "rendered": "【祝・大台突破】夫婦合算資産5,000万円を達成しました｜投資×副業14年・2026年5月8日のリアル内訳"
         }
       },
       {
-        "id": 1216,
-        "date": "2026-04-29T12:03:11",
-        "link": "https://side-invest.com/2026/04/29/fukugyou-juuminzei-kaishabare-checklist/",
+        "id": 1491,
+        "date": "2026-05-07T23:18:35",
+        "link": "https://side-invest.com/2026/05/07/fukugyo-side-business-haitou-saito-shinkoku-2026/",
         "title": {
-          "rendered": "副業の住民税で会社バレを防ぐチェック手順｜年1回見直すリスト【会社員の実録】"
+          "rendered": "副業＋米国株配当を確定申告する手順【会社員 雑所得 配当所得 まとめて2026年最新】"
         }
       },
       {
-        "id": 733,
-        "date": "2026-04-29T07:40:00",
-        "link": "https://side-invest.com/2026/04/29/sbi-platinum-preferred-5-percent-real/",
+        "id": 1490,
+        "date": "2026-05-07T23:18:33",
+        "link": "https://side-invest.com/2026/05/07/shin-nisa-couple-360man-double-fill-2026/",
         "title": {
-          "rendered": "SBI証券×三井住友プラチナプリファード クレカ積立 5%還元の実態｜年会費33,000円でもお得か"
+          "rendered": "夫婦で新NISA 360万×2 同時に埋める戦略【共働き会社員の実録ロードマップ】"
         }
       },
       {
-        "id": 732,
-        "date": "2026-04-26T21:15:00",
-        "link": "https://side-invest.com/2026/04/26/new-nisa-monthly-100k-20years-simulation/",
+        "id": 1489,
+        "date": "2026-05-07T23:18:30",
+        "link": "https://side-invest.com/2026/05/07/shin-nisa-monthly-30k-30years-haitou-sim/",
         "title": {
-          "rendered": "新NISA 月10万円 積立 20年後 シミュレーション｜夫婦で2,400万→5,200万に育てた考え方"
+          "rendered": "新NISA 月3万 30年 配当再投資 シミュレーション【会社員副業ゼロでも届く2,500万】"
         }
       },
       {
-        "id": 355,
-        "date": "2026-04-24T17:44:51",
-        "link": "https://side-invest.com/2026/04/24/couple-total-assets-4953man-2026/",
+        "id": 1477,
+        "date": "2026-05-07T23:18:11",
+        "link": "https://side-invest.com/2026/05/07/new-nisa-complete-guide-2026/",
         "title": {
-          "rendered": "【共働き夫婦】実家暮らし期間の貯蓄シミュレーション｜年100万円差をつくる方法"
+          "rendered": "新NISA 完全ガイド【2026年最新】会社員夫婦が4,953万円を作った全戦略"
         }
       }
     ],
     "upcoming": [
-      {
-        "id": 735,
-        "date": "2026-05-04T19:45:00",
-        "link": "https://side-invest.com/?p=735",
-        "title": {
-          "rendered": "米国株の配当に外国税額控除を使う手順｜副業会社員の確定申告実録"
-        }
-      },
-      {
-        "id": 736,
-        "date": "2026-05-07T08:30:00",
-        "link": "https://side-invest.com/?p=736",
-        "title": {
-          "rendered": "SBI・V・S&#038;P500 vs eMAXIS Slim S&#038;P500｜信託報酬とわが家が乗り換えなかった理由"
-        }
-      },
       {
         "id": 737,
         "date": "2026-05-10T22:10:00",
