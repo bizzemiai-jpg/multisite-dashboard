@@ -4,10 +4,42 @@
     "label": "AI英会話アプリ",
     "color": "#3b82f6",
     "url": "https://biz-english-ai.com",
-    "published_total": 48,
-    "future_total": 18,
-    "published_7d": 6,
+    "published_total": 52,
+    "future_total": 22,
+    "published_7d": 7,
     "latest_published": [
+      {
+        "id": 2558,
+        "date": "2026-05-13T20:31:00",
+        "link": "https://biz-english-ai.com/remote-loneliness-mens-recovery/",
+        "title": {
+          "rendered": "在宅勤務2年で会話量が激減した30代男｜誰とも話さない日々から抜け出した習慣"
+        }
+      },
+      {
+        "id": 831,
+        "date": "2026-05-13T11:41:00",
+        "link": "https://biz-english-ai.com/nativecamp-demerit-honest-review-2026/",
+        "title": {
+          "rendered": "ネイティブキャンプ のデメリット・悪い口コミを正直レビュー｜向かない人の特徴まとめ【2026年】"
+        }
+      },
+      {
+        "id": 826,
+        "date": "2026-05-12T22:02:00",
+        "link": "https://biz-english-ai.com/studysapuri-english-ai-conversation-feature-review/",
+        "title": {
+          "rendered": "スタディサプリENGLISH AI英会話機能の実力は？人間講師との違いを検証【2026年】"
+        }
+      },
+      {
+        "id": 821,
+        "date": "2026-05-10T21:07:00",
+        "link": "https://biz-english-ai.com/elsa-speak-demerit-honest-review-2026/",
+        "title": {
+          "rendered": "ELSA Speak のデメリット・悪い口コミを正直まとめ｜買って後悔しないために【2026年】"
+        }
+      },
       {
         "id": 809,
         "date": "2026-05-09T21:07:00",
@@ -15,65 +47,9 @@
         "title": {
           "rendered": "SpeakのAI発音矯正の仕組みとは？OpenAI提携で何が変わった？【2026年版】"
         }
-      },
-      {
-        "id": 830,
-        "date": "2026-05-08T11:53:00",
-        "link": "https://biz-english-ai.com/nativecamp-beginner-starter-guide-2026/",
-        "title": {
-          "rendered": "ネイティブキャンプ は初心者でも大丈夫？英語が話せない人向けの始め方と講師選び【2026年】"
-        }
-      },
-      {
-        "id": 820,
-        "date": "2026-05-07T11:47:00",
-        "link": "https://biz-english-ai.com/elsa-speak-business-english-usage-guide/",
-        "title": {
-          "rendered": "ELSA Speak はビジネス英語に使える？プレゼン・会議フレーズの練習法【2026年】"
-        }
-      },
-      {
-        "id": 808,
-        "date": "2026-05-06T20:23:00",
-        "link": "https://biz-english-ai.com/speak-app-business-english-guide/",
-        "title": {
-          "rendered": "Speakビジネス英語への活用法｜会議・プレゼン・メールに使えるフレーズ練習術"
-        }
-      },
-      {
-        "id": 835,
-        "date": "2026-05-05T18:47:00",
-        "link": "https://biz-english-ai.com/dmm-eikaiwa-demerit-honest-review-2026/",
-        "title": {
-          "rendered": "DMM英会話 のデメリット・悪い口コミを正直まとめ｜後悔しないための注意点【2026年】"
-        }
       }
     ],
     "upcoming": [
-      {
-        "id": 821,
-        "date": "2026-05-10T21:07:00",
-        "link": "https://biz-english-ai.com/?p=821",
-        "title": {
-          "rendered": "ELSA Speak のデメリット・悪い口コミを正直まとめ｜買って後悔しないために【2026年】"
-        }
-      },
-      {
-        "id": 826,
-        "date": "2026-05-12T22:02:00",
-        "link": "https://biz-english-ai.com/?p=826",
-        "title": {
-          "rendered": "スタディサプリENGLISH AI英会話機能の実力は？人間講師との違いを検証【2026年】"
-        }
-      },
-      {
-        "id": 831,
-        "date": "2026-05-13T11:41:00",
-        "link": "https://biz-english-ai.com/?p=831",
-        "title": {
-          "rendered": "ネイティブキャンプ のデメリット・悪い口コミを正直レビュー｜向かない人の特徴まとめ【2026年】"
-        }
-      },
       {
         "id": 810,
         "date": "2026-05-14T16:34:00",
@@ -91,6 +67,14 @@
         }
       },
       {
+        "id": 2560,
+        "date": "2026-05-16T14:47:00",
+        "link": "https://biz-english-ai.com/?p=2560",
+        "title": {
+          "rendered": "コミュ障の30代会社員が「雑談が苦じゃなくなった」きっかけ｜AI相手の練習から始まった話"
+        }
+      },
+      {
         "id": 836,
         "date": "2026-05-17T13:23:00",
         "link": "https://biz-english-ai.com/?p=836",
@@ -105,6 +89,22 @@
         "title": {
           "rendered": "ネイティブキャンプ のビジネス英語コースは使える？社会人向け活用法と効果検証【2026年】"
         }
+      },
+      {
+        "id": 2562,
+        "date": "2026-05-19T20:17:00",
+        "link": "https://biz-english-ai.com/?p=2562",
+        "title": {
+          "rendered": "月曜の朝、会社に行きたくない｜30代会社員が自信を取り戻すために始めた朝15分の習慣"
+        }
+      },
+      {
+        "id": 811,
+        "date": "2026-05-20T09:07:00",
+        "link": "https://biz-english-ai.com/?p=811",
+        "title": {
+          "rendered": "AI英会話アプリ比較2026｜Speak・ネイティブキャンプ・ELSA・DMM英会話を徹底比較"
+        }
       }
     ],
     "status": "OK"
@@ -114,14 +114,38 @@
     "label": "AI×業務効率化",
     "color": "#10b981",
     "url": "https://ai-gyomu.jp",
-    "published_total": 37,
-    "future_total": 9,
-    "published_7d": 2,
+    "published_total": 40,
+    "future_total": 14,
+    "published_7d": 4,
     "latest_published": [
+      {
+        "id": 196,
+        "date": "2026-05-14T08:51:00",
+        "link": "https://ai-gyomu.jp/rimo-review/",
+        "title": {
+          "rendered": "Rimo Voice 評判・料金レビュー【2026年】専門用語特化型AI議事録の実力"
+        }
+      },
+      {
+        "id": 1855,
+        "date": "2026-05-13T20:23:00",
+        "link": "https://ai-gyomu.jp/overtime-hell-accounting-mens-recovery/",
+        "title": {
+          "rendered": "毎日終電の30代経理が、定時で帰れるようになった転機｜手作業を捨てた日"
+        }
+      },
+      {
+        "id": 195,
+        "date": "2026-05-10T13:14:00",
+        "link": "https://ai-gyomu.jp/gmo-agree-vs-cloudsign/",
+        "title": {
+          "rendered": "GMO電子印鑑Agree vs クラウドサイン 比較【2026年】現場目線の判断基準"
+        }
+      },
       {
         "id": 194,
         "date": "2026-05-07T13:42:00",
-        "link": "https://ai-gyomu.jp/2026/05/07/kojin-kakutei-kaigo-guide/",
+        "link": "https://ai-gyomu.jp/kojin-kakutei-kaigo-guide/",
         "title": {
           "rendered": "個人事業主の確定申告 会計ソフト選び方ガイド【freee・MF・弥生を状況別に比較】"
         }
@@ -129,51 +153,19 @@
       {
         "id": 193,
         "date": "2026-05-03T11:23:00",
-        "link": "https://ai-gyomu.jp/2026/05/03/dx-saas-hajimeni/",
+        "link": "https://ai-gyomu.jp/dx-saas-hajimeni/",
         "title": {
           "rendered": "中小企業DXで最初に入れるべきSaaS3選【Power Automate担当者が解説】"
-        }
-      },
-      {
-        "id": 192,
-        "date": "2026-04-27T19:57:00",
-        "link": "https://ai-gyomu.jp/2026/04/27/yayoi-review/",
-        "title": {
-          "rendered": "弥生会計オンライン 料金 2026年版｜全プラン・freee/MF比較・初年度無料の罠を実体験で解説"
-        }
-      },
-      {
-        "id": 191,
-        "date": "2026-04-25T12:14:00",
-        "link": "https://ai-gyomu.jp/2026/04/25/tldv-review/",
-        "title": {
-          "rendered": "tl;dv 評判は本当？2026年版で実体験レビュー｜料金・日本語精度・Notta比較まで全部正直に書く"
-        }
-      },
-      {
-        "id": 190,
-        "date": "2026-04-22T21:23:00",
-        "link": "https://ai-gyomu.jp/2026/04/22/denshikeiyaku-naze-hirogarnai/",
-        "title": {
-          "rendered": "電子契約が社内に定着しない3つの理由と対策【DX推進担当の経験から】【2026年版】"
         }
       }
     ],
     "upcoming": [
       {
-        "id": 195,
-        "date": "2026-05-10T13:14:00",
-        "link": "https://ai-gyomu.jp/?p=195",
+        "id": 1857,
+        "date": "2026-05-16T14:47:00",
+        "link": "https://ai-gyomu.jp/?p=1857",
         "title": {
-          "rendered": "GMO電子印鑑Agree vs クラウドサイン 比較【2026年】現場目線の判断基準"
-        }
-      },
-      {
-        "id": 196,
-        "date": "2026-05-14T08:51:00",
-        "link": "https://ai-gyomu.jp/?p=196",
-        "title": {
-          "rendered": "Rimo Voice 評判・料金レビュー【2026年】専門用語特化型AI議事録の実力"
+          "rendered": "会議が多すぎる30代会社員のリアル｜議事録に2時間かけるのをやめた話"
         }
       },
       {
@@ -185,6 +177,22 @@
         }
       },
       {
+        "id": 1859,
+        "date": "2026-05-19T13:53:00",
+        "link": "https://ai-gyomu.jp/?p=1859",
+        "title": {
+          "rendered": "異動の内示が出た30代会社員へ｜新部署で初日から戦力になるためのAIツール"
+        }
+      },
+      {
+        "id": 1861,
+        "date": "2026-05-22T13:31:00",
+        "link": "https://ai-gyomu.jp/?p=1861",
+        "title": {
+          "rendered": "紙書類を捨てたい30代経理｜段ボール3箱を電子化した1週間の手順"
+        }
+      },
+      {
         "id": 198,
         "date": "2026-05-24T11:23:00",
         "link": "https://ai-gyomu.jp/?p=198",
@@ -193,27 +201,19 @@
         }
       },
       {
+        "id": 1863,
+        "date": "2026-05-25T21:42:00",
+        "link": "https://ai-gyomu.jp/?p=1863",
+        "title": {
+          "rendered": "中小企業で経理1人ぼっちの30代｜「相談相手がいない」を解決した3つのツール"
+        }
+      },
+      {
         "id": 199,
         "date": "2026-05-28T11:57:00",
         "link": "https://ai-gyomu.jp/?p=199",
         "title": {
           "rendered": "AI議事録ツールの選び方ガイド【Notta・tl;dv・Rimoを用途別に比較 2026年版】"
-        }
-      },
-      {
-        "id": 200,
-        "date": "2026-05-31T20:37:00",
-        "link": "https://ai-gyomu.jp/?p=200",
-        "title": {
-          "rendered": "freeeとマネーフォワード、DX推進担当目線で選ぶならどちら？【2026年比較】"
-        }
-      },
-      {
-        "id": 201,
-        "date": "2026-06-03T14:14:00",
-        "link": "https://ai-gyomu.jp/?p=201",
-        "title": {
-          "rendered": "クラウドサイン料金プランの選び方【個人事業主・中小企業はどのプランが最適？】"
         }
       }
     ],
@@ -224,14 +224,30 @@
     "label": "副業×投資",
     "color": "#f59e0b",
     "url": "https://side-invest.com",
-    "published_total": 32,
-    "future_total": 5,
-    "published_7d": 7,
+    "published_total": 34,
+    "future_total": 11,
+    "published_7d": 8,
     "latest_published": [
+      {
+        "id": 1584,
+        "date": "2026-05-13T18:12:00",
+        "link": "https://side-invest.com/retirement-fear-30s-mens-calc/",
+        "title": {
+          "rendered": "30代会社員、老後資金が怖くなった夜｜計算したら手取り月+3万で何とかなった話"
+        }
+      },
+      {
+        "id": 737,
+        "date": "2026-05-10T22:10:00",
+        "link": "https://side-invest.com/kigyo-dc-matching-vs-idec/",
+        "title": {
+          "rendered": "企業型DC マッチング拠出 vs iDeCo 会社員の節税最大化｜同時加入はできる？"
+        }
+      },
       {
         "id": 1539,
         "date": "2026-05-08T17:57:55",
-        "link": "https://side-invest.com/2026/05/08/couple-total-assets-50million-achieved-2026-05-08/",
+        "link": "https://side-invest.com/couple-total-assets-50million-achieved-2026-05-08/",
         "title": {
           "rendered": "【祝・大台突破】夫婦合算資産5,000万円を達成しました｜投資×副業14年・2026年5月8日のリアル内訳"
         }
@@ -239,7 +255,7 @@
       {
         "id": 1491,
         "date": "2026-05-07T23:18:35",
-        "link": "https://side-invest.com/2026/05/07/fukugyo-side-business-haitou-saito-shinkoku-2026/",
+        "link": "https://side-invest.com/fukugyo-side-business-haitou-saito-shinkoku-2026/",
         "title": {
           "rendered": "副業＋米国株配当を確定申告する手順【会社員 雑所得 配当所得 まとめて2026年最新】"
         }
@@ -247,43 +263,27 @@
       {
         "id": 1490,
         "date": "2026-05-07T23:18:33",
-        "link": "https://side-invest.com/2026/05/07/shin-nisa-couple-360man-double-fill-2026/",
+        "link": "https://side-invest.com/shin-nisa-couple-360man-double-fill-2026/",
         "title": {
           "rendered": "夫婦で新NISA 360万×2 同時に埋める戦略【共働き会社員の実録ロードマップ】"
-        }
-      },
-      {
-        "id": 1489,
-        "date": "2026-05-07T23:18:30",
-        "link": "https://side-invest.com/2026/05/07/shin-nisa-monthly-30k-30years-haitou-sim/",
-        "title": {
-          "rendered": "新NISA 月3万 30年 配当再投資 シミュレーション【会社員副業ゼロでも届く2,500万】"
-        }
-      },
-      {
-        "id": 1477,
-        "date": "2026-05-07T23:18:11",
-        "link": "https://side-invest.com/2026/05/07/new-nisa-complete-guide-2026/",
-        "title": {
-          "rendered": "新NISA 完全ガイド【2026年最新】会社員夫婦が4,953万円を作った全戦略"
         }
       }
     ],
     "upcoming": [
-      {
-        "id": 737,
-        "date": "2026-05-10T22:10:00",
-        "link": "https://side-invest.com/?p=737",
-        "title": {
-          "rendered": "企業型DC マッチング拠出 vs iDeCo 会社員の節税最大化｜同時加入はできる？"
-        }
-      },
       {
         "id": 738,
         "date": "2026-05-14T14:55:00",
         "link": "https://side-invest.com/?p=738",
         "title": {
           "rendered": "ふるさと納税 副業収入込みの上限額を計算する実例｜給与+副業パターン"
+        }
+      },
+      {
+        "id": 1586,
+        "date": "2026-05-16T21:23:00",
+        "link": "https://side-invest.com/?p=1586",
+        "title": {
+          "rendered": "給料が5年上がらない30代会社員｜最初に手を付けた副業のリアルな現実"
         }
       },
       {
@@ -295,11 +295,27 @@
         }
       },
       {
+        "id": 1588,
+        "date": "2026-05-19T19:42:00",
+        "link": "https://side-invest.com/?p=1588",
+        "title": {
+          "rendered": "30代で「出世競争から降りた」会社員｜会社に依存しない収入の作り方"
+        }
+      },
+      {
         "id": 740,
         "date": "2026-05-21T23:30:00",
         "link": "https://side-invest.com/?p=740",
         "title": {
           "rendered": "楽天証券からSBI証券へ投資信託を移管する手順｜実際にやってみた体験記"
+        }
+      },
+      {
+        "id": 1590,
+        "date": "2026-05-22T19:17:00",
+        "link": "https://side-invest.com/?p=1590",
+        "title": {
+          "rendered": "貯金が増えない30代会社員へ｜支出を減らすより収入を増やす選択肢"
         }
       },
       {
